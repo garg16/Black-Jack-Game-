@@ -188,9 +188,9 @@ let blackjackGame = {
 const YOU = blackjackGame['you']
 const DEALER = blackjackGame['dealer']
 
-const hitSound = new Audio('/Users/vaibhavgarg/Documents/JS project/static/sounds/swish.m4a');
-const winSound = new Audio('/Users/vaibhavgarg/Documents/JS project/static/sounds/cash.mp3');
-const lossSound = new Audio('/Users/vaibhavgarg/Documents/JS project/static/sounds/aww.mp3');
+const hitSound = new Audio('sounds/swish.m4a');
+const winSound = new Audio('sounds/cash.mp3');
+const lossSound = new Audio('sounds/aww.mp3');
 document.querySelector('#blackjack-hit-button').addEventListener('click', blackjackHit);
 document.querySelector('#blackjack-deal-button').addEventListener('click', blackjackdeal)
 document.querySelector('#blackjack-stand-button').addEventListener('click', dealerlogic)
@@ -212,7 +212,7 @@ function showCard(card, activePlayer) {
     if (activePlayer['score'] <= 21) {
 
         let cardImage = document.createElement('img');
-        cardImage.src = `/Users/vaibhavgarg/Documents/JS project/static/images/${card}.png`;
+        cardImage.src = `images/${card}.png`;
         document.querySelector(activePlayer['div']).appendChild(cardImage);
         hitSound.play();
     }
