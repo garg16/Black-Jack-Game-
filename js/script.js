@@ -17,7 +17,7 @@ function reset() {
 function generateCat() {
     var image = document.createElement('img')
     var div = document.getElementById('flex-cat-gen')
-    image.src = "/images/cat.gif"
+    image.src = "images/cat.gif"
 
 
     div.appendChild(image)
