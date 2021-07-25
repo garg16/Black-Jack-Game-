@@ -17,7 +17,7 @@ function reset() {
 function generateCat() {
     var image = document.createElement('img')
     var div = document.getElementById('flex-cat-gen')
-    image.src = "/Users/vaibhavgarg/Documents/JS project/static/images/cat.gif"
+    image.src = "https://media.tenor.com/images/2221d8381f316e52cd8d3e4cf3601a89/tenor.gif"
 
 
     div.appendChild(image)
